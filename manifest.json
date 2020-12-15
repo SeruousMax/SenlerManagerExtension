@@ -1,0 +1,16 @@
+{
+  "name": "MyApp",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end",
+      "css": ["css/style.css"]
+    }
+  ],
+  "permissions": [
+    "https://vk.com/*"
+  ],
+  "manifest_version": 2
+}
